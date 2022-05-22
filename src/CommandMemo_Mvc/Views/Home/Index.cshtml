@@ -1,7 +1,8 @@
 ﻿@model CommandMemo_Mvc.Models.HomeModel
 
 @{
-    ViewData["Title"] = "Home Page";
+    if(Model.SelectedTitleIndex.HasValue)
+    ViewData["Title"] = Model.Titles.ElementAtOrDefault(Model.SelectedTitleIndex.Value);
 }
 
 <div class="flex-start" style="width: 100%;">
