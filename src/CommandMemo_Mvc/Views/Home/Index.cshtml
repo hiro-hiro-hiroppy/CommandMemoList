@@ -1,0 +1,55 @@
+﻿@model CommandMemo_Mvc.Models.HomeModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="flex-start" style="width: 100%;">
+    @foreach (var (value, index) in Model.Titles.Select((value, index) => (value, index)))
+    {
+        {
+            var isSelected = (index == Model.SelectedTitleIndex) ? "is-selected" : "";
+            <div class="tab-button">
+                <button type="submit" asp-action="Index" asp-route-id="@index" class="@isSelected">@value</button>
+            </div>
+        }
+    }
+</div>
+
+<div class="flex-start" style="flex-flow: column; width: 100%; margin-top: 10px;">
+    <div class="flex-start" style="width: 100%;">
+        <div class="flex-start table-head table-no">No.</div>
+        <div class="flex-start table-head table-command">コマンド</div>
+        <div class="flex-start table-head table-description">説明</div>
+        <div class="flex-start table-head table-copy"></div>
+    </div>
+    @{
+        foreach (var (value, index) in Model.Commands.Select((value, index) => (value, index)))
+        {
+            <div class="flex-start table-row" style="width: 100%;">
+                <div class="flex-middle table-body table-no">
+                    @(index + 1)
+                </div>
+                <div class="flex-start table-body table-command">
+                    @value.Command
+                </div>
+                <div class="flex-start table-body table-description">
+                    @value.Description
+                </div>
+                <div class="flex-middle table-body table-copy">
+                    <button type="button" class="btn-copy" onclick="copy_to_clipboard('@value.Command')">
+                        <img src="~/Image/copy-icon.svg" />
+                    </button>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<script type="text/javascript">
+    function copy_to_clipboard(value) {
+        if (navigator.clipboard) {
+            var copyText = value;
+            navigator.clipboard.writeText(copyText)
+        }
+</script>

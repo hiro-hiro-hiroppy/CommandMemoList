@@ -1,0 +1,13 @@
+{
+  "title": "npm2",
+  "contents": [
+    {
+      "command": "コマンド3",
+      "description": "コマンド3の説明"
+    },
+    {
+      "command": "コマンド4",
+      "description": "コマンド4の説明"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandMemo_Mvc", "src\CommandMemo_Mvc\CommandMemo_Mvc.csproj", "{0E77C3C2-6347-4382-A31E-65329F6AF697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandMemo_Json", "src\CommandMemo_Json\CommandMemo_Json.csproj", "{673525EC-0A97-43C9-B40C-631B45E41868}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E77C3C2-6347-4382-A31E-65329F6AF697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E77C3C2-6347-4382-A31E-65329F6AF697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E77C3C2-6347-4382-A31E-65329F6AF697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E77C3C2-6347-4382-A31E-65329F6AF697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673525EC-0A97-43C9-B40C-631B45E41868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673525EC-0A97-43C9-B40C-631B45E41868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673525EC-0A97-43C9-B40C-631B45E41868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673525EC-0A97-43C9-B40C-631B45E41868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E56FDCE1-CE17-4561-8000-55E6655AA316}
+	EndGlobalSection
+EndGlobal

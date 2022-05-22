@@ -1,0 +1,13 @@
+{
+  "title": "テンプレート",
+  "contents": [
+    {
+      "command": "コマンド1",
+      "description": "コマンド1の説明"
+    },
+    {
+      "command": "コマンド2",
+      "description": "コマンド2の説明"
+    }
+  ]
+}

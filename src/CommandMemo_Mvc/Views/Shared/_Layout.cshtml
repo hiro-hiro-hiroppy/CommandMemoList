@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CommandMemo_Mvc</title>
+    <link href="~/Style/Index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="base">
+        <header>
+            <h2 style="text-decoration: underline;">&nbsp;&nbsp;コマンドメモ集&nbsp;&nbsp;</h2>
+            <p>※1280px × 720pxが適切サイズ</p>
+        </header>
+
+        <form method="post">
+            <div class="container" style="width: 100%;">
+                <main role="main" style="width: 100%;">
+                    @RenderBody()
+                </main>
+            </div>
+        </form>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿body {
+    font-family: 'Futura Round W01 Medium', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', 'Meiryo', 'sans-serif';
+    margin: 0px !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.base {
+    width: 1280px;
+    max-width: 1280px;
+    height: 720px;
+    max-height: 720px;
+    margin: 0 auto;
+    /*background: rgb(240,240,240);*/
+    padding: 10px 20px;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button > button {
+    height: 40px;
+    margin-right: 10px;
+    width: 200px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+    border: solid 1px rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+.tab-button > button:hover{
+    opacity: 0.5;
+}
+
+    .tab-button > button.is-selected {
+        background-color: #e3faf8;
+        border: solid 1px #748ca5;
+    }
+
+.table-head {
+    padding: 5px 10px;
+    height: 40px;
+    background-color: #e3faf8;
+    border: solid 1px #748ca5;
+}
+
+.table-row:hover {
+    background: rgb(245, 245, 245);
+}
+
+.table-body {
+    min-height: 40px;
+    padding: 5px 10px;
+    border: solid 1px #748ca5;
+}
+
+.table-no {
+    width: 50px;
+}
+
+.table-command {
+    flex: 4;
+}
+
+.table-description {
+    flex: 5;
+}
+
+.table-copy {
+    width: 100px;
+}
+
+.btn-copy {
+    width: 35px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
