@@ -11,7 +11,7 @@
         {
             var isSelected = (index == Model.SelectedTitleIndex) ? "is-selected" : "";
             <div class="tab-button">
-                <button type="submit" asp-action="Index" asp-route-id="@index" class="@isSelected">@value</button>
+                <button type="submit" formmethod="get" asp-action="Index" asp-route-id="@index" class="@isSelected">@value</button>
             </div>
         }
     }
@@ -53,4 +53,5 @@
             var copyText = value;
             navigator.clipboard.writeText(copyText)
         }
+    }
 </script>

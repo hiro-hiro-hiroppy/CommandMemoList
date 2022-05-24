@@ -42,7 +42,7 @@ namespace CommandMemo_Mvc.Controllers
         /// Index画面 コマンド指定
         /// </summary>
         /// <returns></returns>
-        [HttpPost]
+        [HttpGet]
         [Route("Index/{id?}")]
         public async Task<IActionResult> Index(int? id)
         {
